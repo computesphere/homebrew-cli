@@ -10,7 +10,7 @@ class Computesphere < Formula
   on_macos do
     on_intel do
       url "https://github.com/computesphere/cli/releases/download/0.0.2-rc/darwin_amd64.tar.gz"
-      sha256 "813aac09004641782c17e7b4f58b4917928b7ed782ebabab664a9ce0b63e4694"
+      sha256 "c0aef86bbe39e67896cd0aaa404b9377cf6d8762fca4b6968b35b4cfed925f3d"
 
       def install
         bin.install "computesphere"
@@ -18,7 +18,7 @@ class Computesphere < Formula
     end
     on_arm do
       url "https://github.com/computesphere/cli/releases/download/0.0.2-rc/darwin_arm64.tar.gz"
-      sha256 "487d4dc55e4f7d33b53dbbab779616ace241c66a043b7e9c031d5b509e4e60b5"
+      sha256 "33104c5b4faf5fc3551c2913b4045031ed319fff6826bb08a5a8be679a3ad7a1"
 
       def install
         bin.install "computesphere"
@@ -30,7 +30,7 @@ class Computesphere < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.2-rc/linux_amd64.tar.gz"
-        sha256 "80f31cb8c8e7e2a62e7bd04aa69f4bc3a2d140ea768e6be2957c64f5f16c1410"
+        sha256 "fb962682f9ad499490345a3f0b2b555d0a0720005d6666d9714a9a3dab0ccab7"
 
         def install
           bin.install "computesphere"
@@ -40,7 +40,7 @@ class Computesphere < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.2-rc/linux_arm.tar.gz"
-        sha256 "e9924e9cf6d845d8ab596c4ac570e028c72c2d3315e49266e1c6848358ffcd26"
+        sha256 "3542843d5700549a40d355dff1794bd886424f1a33859ac92c13e65084e02513"
 
         def install
           bin.install "computesphere"
@@ -50,7 +50,7 @@ class Computesphere < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.2-rc/linux_arm64.tar.gz"
-        sha256 "03ed068dce6732dc32fcbcf6ec68ad8348456e687bf21f0cb9ac8bf7e3259c06"
+        sha256 "968816c51bffb2fad16ad638a4fe6551a04cecea51804521e6053027647137f0"
 
         def install
           bin.install "computesphere"
