@@ -10,7 +10,7 @@ class Computesphere < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/computesphere/cli/releases/download/0.0.4-rc/darwin_amd64.tar.gz"
-      sha256 "9a0de16a5341a53a69d330fc0e61981d9afbdbd18da4a58d4823d15f687bce72"
+      sha256 "a1e666933c86f9c253ea7cbdb216655fd07408ab6f3aabc8e30bce497f4a3577"
 
       def install
         bin.install "computesphere"
@@ -18,7 +18,7 @@ class Computesphere < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/computesphere/cli/releases/download/0.0.4-rc/darwin_arm64.tar.gz"
-      sha256 "fc7fb2ba297144da33816d105d8721ffffd1e1a42f1b547ee0631f53ff861dd4"
+      sha256 "3d91131815ec3f12b3f58165ebd92570150eee92e162afa611423b291441504d"
 
       def install
         bin.install "computesphere"
@@ -30,7 +30,7 @@ class Computesphere < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.4-rc/linux_amd64.tar.gz"
-        sha256 "9a255d08a364ff1d3454d5d4f986ecd2fa0e0a8e35e45fa6b78c6bb70a8ae1d8"
+        sha256 "c095f8472fda8bc6264769970f2815ca65bef22f6904cec52b2768c382ee37c6"
 
         def install
           bin.install "computesphere"
@@ -40,7 +40,7 @@ class Computesphere < Formula
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.4-rc/linux_arm.tar.gz"
-        sha256 "11cd0b5f067c94dbaa48fb9ffc72eeb03fed26186b963a993f7fa5b4b082af4c"
+        sha256 "698da459990b46debb74f61f7389b8e8ad304358a3bdc893cb43c4af51f9cfc2"
 
         def install
           bin.install "computesphere"
@@ -50,7 +50,7 @@ class Computesphere < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/computesphere/cli/releases/download/0.0.4-rc/linux_arm64.tar.gz"
-        sha256 "187b4fbf5f7fc3c61d1c9383e68e7b73a5e4f54fc93507dc66d3fa1122488747"
+        sha256 "abad2955b3e811b66e5c798b6c64299ba186fe2fb13401914d9cd52d9c7d4fc0"
 
         def install
           bin.install "computesphere"
