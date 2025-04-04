@@ -5,20 +5,20 @@
 class Computesphere < Formula
   desc "Command-line tool for ComputeSphere"
   homepage "https://computesphere.com"
-  version "0.0.5-rc"
+  version "0.0.6-rc"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/computesphere/cli/releases/download/0.0.5-rc/darwin_amd64.tar.gz"
-      sha256 "056bcee41fca72ae1242006e7f61cae3a3e4556fc7b7fe72878c05822a016130"
+      url "https://github.com/computesphere/cli/releases/download/0.0.6-rc/darwin_amd64.tar.gz"
+      sha256 "97117ee529a88c3a2722d1258eb0b86a66e945bb80ad0c270acfd6f13d3f3ee4"
 
       def install
         bin.install "computesphere"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/computesphere/cli/releases/download/0.0.5-rc/darwin_arm64.tar.gz"
-      sha256 "0e6448929e508455c03564d8b95d43c1bcbc26b6251c90ae521a1937afbb3ebd"
+      url "https://github.com/computesphere/cli/releases/download/0.0.6-rc/darwin_arm64.tar.gz"
+      sha256 "b06f8e971bdff326157f5a80efcec4797c7bbdce882b1b4c98337b359b371e69"
 
       def install
         bin.install "computesphere"
@@ -29,8 +29,8 @@ class Computesphere < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/computesphere/cli/releases/download/0.0.5-rc/linux_amd64.tar.gz"
-        sha256 "329c2c51387ea61e7b22fedde671f0fb3ddf1241d3c8bd70d927a92dc52aa0d6"
+        url "https://github.com/computesphere/cli/releases/download/0.0.6-rc/linux_amd64.tar.gz"
+        sha256 "07a0cc1b44343220b2da3f31546178a1fade56cdce8a07f196791e4777bd0125"
 
         def install
           bin.install "computesphere"
@@ -39,8 +39,8 @@ class Computesphere < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/computesphere/cli/releases/download/0.0.5-rc/linux_arm.tar.gz"
-        sha256 "ab4e62e4b4b82fea2ce168cf38562cc7c2befb12f7c3ce25d8a005d636aeec16"
+        url "https://github.com/computesphere/cli/releases/download/0.0.6-rc/linux_arm.tar.gz"
+        sha256 "c87e0094127fffb0d89e7e541b210e70a303e53d82a4b1a0d0e0cdb4e855eee6"
 
         def install
           bin.install "computesphere"
@@ -49,8 +49,8 @@ class Computesphere < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/computesphere/cli/releases/download/0.0.5-rc/linux_arm64.tar.gz"
-        sha256 "1ed059c61d38fe592d49fda09028117ed4cf375aaaac032272a73185c1eacced"
+        url "https://github.com/computesphere/cli/releases/download/0.0.6-rc/linux_arm64.tar.gz"
+        sha256 "2ea592640d27e68a060b715ab9a9d1008fc0e5bbd08ab0a89afcfe614c7ba19c"
 
         def install
           bin.install "computesphere"
