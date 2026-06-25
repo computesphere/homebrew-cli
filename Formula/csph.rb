@@ -5,20 +5,20 @@
 class Csph < Formula
   desc "Command-line tool for ComputeSphere"
   homepage "https://computesphere.com"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/computesphere/cli/releases/download/0.2.1/darwin_amd64.tar.gz"
-      sha256 "89c2a59ec74a5c5b1dc5df85beb7f785fa5efd356aceb3a6064fc61bee236ca9"
+      url "https://github.com/computesphere/cli/releases/download/0.3.0/darwin_amd64.tar.gz"
+      sha256 "2d08eab0d41c7c229b0c254521d0526d2dfe4932eaa1539e66a7ad91c81e5fda"
 
       define_method(:install) do
         bin.install "csph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/computesphere/cli/releases/download/0.2.1/darwin_arm64.tar.gz"
-      sha256 "3dec361a9de1037a60861ee6d182c332db1e22dff981faeb4c5bfa01437bc18b"
+      url "https://github.com/computesphere/cli/releases/download/0.3.0/darwin_arm64.tar.gz"
+      sha256 "455dcd55337bfa04007750c165e840cb9bc5f982609634ca20a52dc0386ea6d8"
 
       define_method(:install) do
         bin.install "csph"
@@ -28,22 +28,22 @@ class Csph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/computesphere/cli/releases/download/0.2.1/linux_amd64.tar.gz"
-      sha256 "7ff0a6e0f0341631403c342059b2af0cc492a0bfc50efe4df2e3bb362fe70380"
+      url "https://github.com/computesphere/cli/releases/download/0.3.0/linux_amd64.tar.gz"
+      sha256 "d68fd53d3d57f43f254a1224cd27f1810ffa367d25fb9befb7f7c32cfce95751"
       define_method(:install) do
         bin.install "csph"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/computesphere/cli/releases/download/0.2.1/linux_arm.tar.gz"
-      sha256 "00f6427374e47dff11a765d7935a98db3a73b55c925def6f5876c112c8c3fd4d"
+      url "https://github.com/computesphere/cli/releases/download/0.3.0/linux_arm.tar.gz"
+      sha256 "8e7bd856b1f4fe36ff4649fff6a6fef5d78b073d59fc9ad311a8bfd5610c66b5"
       define_method(:install) do
         bin.install "csph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/computesphere/cli/releases/download/0.2.1/linux_arm64.tar.gz"
-      sha256 "92cb238f27e8158f311cf011fc4a8f504becfa6abb372a26c08bf614f18a14b7"
+      url "https://github.com/computesphere/cli/releases/download/0.3.0/linux_arm64.tar.gz"
+      sha256 "36b049fd42f828f3c59137f6e8bcb8ae8e8d5076e5ecfac707c991149a4c617e"
       define_method(:install) do
         bin.install "csph"
       end
