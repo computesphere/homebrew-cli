@@ -5,7 +5,6 @@
 class Csph < Formula
   desc "Command-line tool for ComputeSphere"
   homepage "https://computesphere.com"
-  version "0.18.0"
 
   on_macos do
     if Hardware::CPU.intel?
